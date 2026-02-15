@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links & Tools | Satyapriya Das</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=SF+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .link-card {
+            background-color: var(--light-navy);
+            padding: 25px;
+            border-radius: 4px;
+            text-align: center;
+            transition: transform 0.2s ease, background-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            background-color: var(--lightest-navy);
+        }
+
+        .link-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            background-color: white;
+            /* Add white background for transparent logos if needed */
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .link-title {
+            color: var(--white);
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .link-desc {
+            color: var(--slate);
+            font-size: 13px;
+        }
+
+        .category-title {
+            color: var(--white);
+            font-size: 24px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--lightest-navy);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">SD.</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="research.html" class="nav-link">Research</a>
+            <a href="links.html" class="nav-link active">Links</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+    </nav>
+
+    <main class="container" style="padding-top: 120px;">
+
+        <!-- Institutes -->
+        <section id="institutes">
+            <h2 class="category-title">Affiliations & Organizations</h2>
+            <div class="links-grid">
+
+                <a href="https://spl.gov.in/SPLv2/index.html" target="_blank" class="link-card">
+                    <img src="assets/Photos_for_background/SPL_logo.jpg" alt="SPL Logo" class="link-img">
+                    <div class="link-title">SPL</div>
+                    <div class="link-desc">Space Physics Laboratory</div>
+                </a>
+
+                <a href="https://www.vssc.gov.in" target="_blank" class="link-card">
+                    <img src="assets/Photos_for_background/ISRO_logo.jpeg" alt="VSSC Logo" class="link-img">
+                    <div class="link-title">VSSC</div>
+                    <div class="link-desc">Vikram Sarabhai Space Centre</div>
+                </a>
+
+                <a href="https://www.isro.gov.in" target="_blank" class="link-card">
+                    <img src="assets/Photos_for_background/ISRO_logo.jpeg" alt="ISRO Logo" class="link-img">
+                    <div class="link-title">ISRO</div>
+                    <div class="link-desc">Indian Space Research Organisation</div>
+                </a>
+
+                <a href="https://www.iist.ac.in" target="_blank" class="link-card">
+                    <img src="assets/Photos_for_background/Indian_Institute_of_Space_Science_and_Technology_Logo.png"
+                        alt="IIST Logo" class="link-img">
+                    <div class="link-title">IIST</div>
+                    <div class="link-desc">Indian Institute of Space Science and Technology</div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Astronomical Tools (New) -->
+        <section id="astro-tools">
+            <h2 class="category-title">Tools</h2>
+            <div class="links-grid">
+
+                <a href="https://www.star.bris.ac.uk/~mbt/topcat/" target="_blank" class="link-card">
+                    <img src="assets/images/logos/TOPCAT.png" alt="TOPCAT" class="link-img" style="border-radius: 0;">
+                    <div class="link-title">TOPCAT</div>
+                    <div class="link-desc">Tool for OPerations on Catalogues And Tables</div>
+                </a>
+
+                <a href="https://vizier.cds.unistra.fr" target="_blank" class="link-card">
+                    <img src="assets/images/logos/vizier.png" alt="Vizier" class="link-img" style="border-radius: 0;">
+                    <div class="link-title">Vizier</div>
+                    <div class="link-desc">Astronomical Catalog Service</div>
+                </a>
+
+                <a href="https://jdaviz.readthedocs.io/en/stable/" target="_blank" class="link-card">
+                    <img src="assets/images/logos/jdaviz.svg" alt="Jdaviz" class="link-img" style="border-radius: 0;">
+                    <div class="link-title">Jdaviz</div>
+                    <div class="link-desc">JWST Data Analysis Visualization</div>
+                </a>
+
+                <a href="https://mast.stsci.edu/portal/Mashup/Clients/Mast/Portal.html" target="_blank"
+                    class="link-card">
+                    <img src="assets/images/logos/MAST.png" alt="MAST" class="link-img" style="border-radius: 0;">
+                    <div class="link-title">MAST Portal</div>
+                    <div class="link-desc">Mikulski Archive for Space Telescopes</div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- AI Tools -->
+        <section id="ai-tools">
+            <h2 class="category-title">AI Tools & Resources</h2>
+
+            <h3 style="color: var(--accent); margin-top: 30px; margin-bottom: 15px;">LLMs & Research Assistants</h3>
+            <div class="links-grid">
+                <a href="https://chat.openai.com" target="_blank" class="link-card">
+                    <img src="assets/images/logos/chatgpt.svg" alt="ChatGPT" class="link-img">
+                    <div class="link-title">ChatGPT</div>
+                    <div class="link-desc">OpenAI</div>
+                </a>
+                <a href="https://claude.ai" target="_blank" class="link-card">
+                    <img src="assets/images/logos/claude.png" alt="Claude" class="link-img">
+                    <div class="link-title">Claude</div>
+                    <div class="link-desc">Anthropic</div>
+                </a>
+                <a href="https://gemini.google.com" target="_blank" class="link-card">
+                    <img src="assets/images/logos/gemini.svg" alt="Gemini" class="link-img">
+                    <div class="link-title">Gemini</div>
+                    <div class="link-desc">Google</div>
+                </a>
+                <a href="https://chat.deepseek.com/" target="_blank" class="link-card">
+                    <img src="assets/images/logos/deepseek.png" alt="DeepSeek" class="link-img">
+                    <div class="link-title">DeepSeek</div>
+                    <div class="link-desc">DeepSeek AI</div>
+                </a>
+                <a href="https://www.perplexity.ai" target="_blank" class="link-card">
+                    <img src="assets/images/logos/perplexity.png" alt="Perplexity" class="link-img">
+                    <div class="link-title">Perplexity</div>
+                    <div class="link-desc">Research Engine</div>
+                </a>
+                <a href="https://notebooklm.google.com/" target="_blank" class="link-card">
+                    <img src="assets/images/logos/notebooklm.png" alt="NotebookLM" class="link-img">
+                    <div class="link-title">NotebookLM</div>
+                    <div class="link-desc">AI Note Taking</div>
+                </a>
+                <a href="https://consensus.app" target="_blank" class="link-card">
+                    <img src="assets/images/logos/consensus.png" alt="Consensus" class="link-img">
+                    <div class="link-title">Consensus</div>
+                    <div class="link-desc">Scientific Research Search</div>
+                </a>
+                <a href="https://elicit.com" target="_blank" class="link-card">
+                    <img src="assets/images/logos/elicit.png" alt="Elicit" class="link-img">
+                    <div class="link-title">Elicit</div>
+                    <div class="link-desc">Analyze Research Papers</div>
+                </a>
+            </div>
+
+            <h3 style="color: var(--accent); margin-top: 30px; margin-bottom: 15px;">Coding & Development</h3>
+            <div class="links-grid">
+                <a href="https://github.com/features/copilot" target="_blank" class="link-card">
+                    <img src="assets/images/logos/copilot.png" alt="Copilot" class="link-img">
+                    <div class="link-title">GitHub Copilot</div>
+                    <div class="link-desc">AI Pair Programmer</div>
+                </a>
+                <a href="https://cursor.sh" target="_blank" class="link-card">
+                    <img src="assets/images/logos/cursor.png" alt="Cursor" class="link-img">
+                    <div class="link-title">Cursor</div>
+                    <div class="link-desc">AI Code Editor</div>
+                </a>
+                <a href="https://www.tabnine.com" target="_blank" class="link-card">
+                    <img src="assets/images/logos/tabnine.png" alt="Tabnine" class="link-img">
+                    <div class="link-title">Tabnine</div>
+                    <div class="link-desc">AI Code Assistant</div>
+                </a>
+                <a href="https://huggingface.co" target="_blank" class="link-card">
+                    <img src="assets/images/logos/huggingface.png" alt="Hugging Face" class="link-img">
+                    <div class="link-title">Hugging Face</div>
+                    <div class="link-desc">AI Models & Datasets</div>
+                </a>
+            </div>
+
+            <h3 style="color: var(--accent); margin-top: 30px; margin-bottom: 15px;">Creativity & Productivity</h3>
+            <div class="links-grid">
+                <a href="https://www.midjourney.com" target="_blank" class="link-card">
+                    <img src="assets/images/logos/midjourney.png" alt="Midjourney" class="link-img">
+                    <div class="link-title">Midjourney</div>
+                    <div class="link-desc">AI Image Generation</div>
+                </a>
+                <a href="https://runwayml.com" target="_blank" class="link-card">
+                    <img src="assets/images/logos/runway.png" alt="Runway" class="link-img">
+                    <div class="link-title">Runway</div>
+                    <div class="link-desc">AI Video Creation</div>
+                </a>
+                <a href="https://www.notion.so/product/ai" target="_blank" class="link-card">
+                    <img src="assets/images/logos/notion.png" alt="Notion AI" class="link-img">
+                    <div class="link-title">Notion AI</div>
+                    <div class="link-desc">Workspace AI</div>
+                </a>
+                <a href="https://gamma.app" target="_blank" class="link-card">
+                    <img src="assets/images/logos/gamma.png" alt="Gamma" class="link-img">
+                    <div class="link-title">Gamma</div>
+                    <div class="link-desc">AI Presentations</div>
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://github.com/SatyaAstroSPL" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/satyapriya-das-74209920a" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="copyright">Designed & Built by Satyapriya Das</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

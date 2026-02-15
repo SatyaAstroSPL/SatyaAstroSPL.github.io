@@ -1,124 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Satyapriya Das | Astrophysics Researcher</title>
-  <meta name="description" content="Personal academic page of Satyapriya Das, Astrophysics Researcher and Data Science Enthusiast.">
-  <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f6f8;
-      color: #333;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    header {
-      text-align: center;
-      padding: 2rem 0;
-    }
-    header img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #333366;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      margin: 0.5rem 0;
-      color: #333366;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-    section {
-      background-color: #ffffff;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    h2 {
-      color: #333366;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .cv-button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.7rem 1.5rem;
-      background-color: #333366;
-      color: #fff;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .cv-button:hover {
-      background-color: #444477;
-    }
-  </style>
+  <meta name="description" content="Portfolio of Satyapriya Das, Scientist and Astrophysics Researcher.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=SF+Mono&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Placeholder for icons -->
+  <!-- FontAwesome CDN for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
-  <div class="container">
+  <nav class="navbar">
+    <div class="logo">SD.</div>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="research.html" class="nav-link">Research</a>
+      <a href="links.html" class="nav-link">Links</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="hamburger">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+  </nav>
 
-    <header>
-      <img src="./assets/profile.png" alt="Satyapriya Das">
-      <h1>Satyapriya Das</h1>
-      <p><strong>Astrophysics Researcher | Data Science Enthusiast</strong></p>
-      <a href="./assets/Satyapriya_Das_CV.pdf" class="cv-button" target="_blank">Download CV</a>
-    </header>
-
-    <section>
-      <h2>About Me</h2>
-      <p>I completed my M.S. in Astronomy & Astrophysics at IIST, and now in a transition phase. I am passionate about exploring the physics of galaxies and black holes, integrating data science and machine learning into astrophysical research. I’ve worked extensively with multi-wavelength datasets, including UVIT/AstroSat and MIRI MRS/JWST, and have experience with tools like CCDLAB, CubeViz, and 3D-Barolo.</p>
-      <p>Outside academia, I enjoy cubing, writing, and traveling.</p>
+  <main>
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hi-text">Hi, my name is</p>
+          <h1 class="big-heading">Satyapriya Das.</h1>
+          <h2 class="medium-heading">I explore the universe through data.</h2>
+          <p class="hero-desc">
+            I am a <span class="highlight">Scientist-SC at ISRO</span> working on AI/ML in Space Weather &
+            Instrumentation.
+          </p>
+          <div class="hero-buttons">
+            <a href="assets/Satyapriya_Das_CV.pdf" target="_blank" class="btn btn-outline">Download CV</a>
+            <a href="research.html" class="btn btn-primary">View Research</a>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <section>
-      <h2>Research & Projects</h2>
-      <ul>
-        <li><strong>AGN Feedback in Nearby Galaxies:</strong> Studying molecular gas dynamics using multi-wavelength data.</li>
-        <li><strong>Machine Learning for X-ray Binary Classification:</strong> Applying ensemble models for classifying HMXBs, LMXBs, CVs, and pulsars.</li>
-        <li><strong>Fisher Matrix analysis - cosmology:</strong> Band average power spectrum from N-body simulations using Fisher matrix. Determined correlation between parameter estimates</li>
-      </ul>
-    </section>
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/SatyaAstroSPL" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/satyapriya-das-74209920a" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://scholar.google.com/citations?user=y0mYu-UAAAAJ&hl=en" target="_blank"><i
+          class="fas fa-graduation-cap"></i></a>
+      <a href="https://orcid.org/0009-0000-4366-434X" target="_blank"><i class="fab fa-orcid"></i></a>
+    </div>
+    <p class="copyright">Designed & Built by Satyapriya Das</p>
+  </footer>
 
-    <section>
-      <h2>Links</h2>
-      <ul>
-        <li><a href="https://orcid.org/0009-0000-4366-434X" target="_blank">ORCID</a></li>
-        <li><a href="https://scholar.google.com/citations?user=y0mYu-UAAAAJ&hl=en" target="_blank">Google Scholar</a></li>
-        <li><a href="https://www.linkedin.com/in/satyapriya-das-74209920a" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/Sat64" target="_blank">GitHub</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:satyapriya1203@gmail.com">satyapriya1203@gmail.com</a></p>
-    </section>
-
-  </div>
-
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
