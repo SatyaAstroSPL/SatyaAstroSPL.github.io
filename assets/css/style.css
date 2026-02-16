@@ -256,7 +256,8 @@ ul {
 .hero-desc {
     font-size: 18px;
     color: var(--slate);
-    max-width: 500px;
+    max-width: 700px;
+    /* Increased from 500px to avoid cutoff */
     margin-bottom: 50px;
 }
 

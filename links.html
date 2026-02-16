@@ -343,6 +343,84 @@
             background: linear-gradient(90deg, transparent, var(--primary-signal) 40%, rgba(255, 153, 51, 0.4) 60%, transparent);
         }
 
+        /* Scroll Reveal Animations */
+        .reveal {
+            position: relative;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+            will-change: transform, opacity;
+        }
+
+        .reveal.active {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        .reveal-stagger>* {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .reveal-stagger.active>* {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+
+        /* Stagger Delays */
+        .reveal-stagger.active>*:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .reveal-stagger.active>*:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .reveal-stagger.active>*:nth-child(3) {
+            transition-delay: 0.3s;
+        }
+
+        .reveal-stagger.active>*:nth-child(4) {
+            transition-delay: 0.4s;
+        }
+
+        .reveal-stagger.active>*:nth-child(5) {
+            transition-delay: 0.5s;
+        }
+
+        /* Go Up Button Styles */
+        .go-up-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 45px;
+            height: 45px;
+            background-color: var(--primary-signal);
+            color: var(--bg-base);
+            border: none;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .go-up-btn.show {
+            opacity: 0.8;
+            visibility: visible;
+        }
+
+        .go-up-btn:hover {
+            opacity: 1;
+            transform: translateY(-5px);
+        }
+
         /* Accessibility */
         @media (prefers-reduced-motion: reduce) {
             * {
@@ -380,7 +458,7 @@
     <main class="main-interface">
 
         <!-- Module 1: Affiliations -->
-        <section class="module-panel" aria-labelledby="affiliations-title">
+        <section class="module-panel reveal" aria-labelledby="affiliations-title">
             <div class="section-header">
                 <!-- Icon: Observatory Dome -->
                 <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -451,7 +529,7 @@
         </section>
 
         <!-- Module 2: Tools -->
-        <section class="module-panel" aria-labelledby="tools-title">
+        <section class="module-panel reveal" aria-labelledby="tools-title">
             <div class="section-header">
                 <!-- Icon: Telescope -->
                 <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -521,7 +599,7 @@
         </section>
 
         <!-- Module 3: AI Tools/Research -->
-        <section class="module-panel" aria-labelledby="ai-title">
+        <section class="module-panel reveal" aria-labelledby="ai-title">
             <div class="section-header">
                 <!-- Icon: Neural Node Graph -->
                 <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -629,7 +707,7 @@
         </section>
 
         <!-- Module 4: Coding -->
-        <section class="module-panel" aria-labelledby="coding-title">
+        <section class="module-panel reveal" aria-labelledby="coding-title">
             <div class="section-header">
                 <!-- Icon: Terminal Prompt -->
                 <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -682,7 +760,7 @@
         </section>
 
         <!-- Module 5: Creativity -->
-        <section class="module-panel" aria-labelledby="creativity-title">
+        <section class="module-panel reveal" aria-labelledby="creativity-title">
             <div class="section-header">
                 <!-- Icon: Stellar Sparkle -->
                 <svg class="section-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
@@ -741,6 +819,7 @@
         © 2026 Satyapriya Das • Scientific Resource Interface
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
